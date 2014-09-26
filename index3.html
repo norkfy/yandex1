@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Способ 3</title>
+	<style>
+		
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.pop-up-wrap {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			background: #000;
+			background: rgba(0,0,0,.6);
+		}
+
+		.pop-up {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			-webkit-transform: translate(-50%,-50%);
+			-ms-transform: translate(-50%, -50%);
+			transform: translate(-50%, -50%);
+			background: #fff;
+			box-sizing: border-box;
+			padding: 10px;
+			border-radius: 5px;
+			width: 50%;
+			margin: 0 auto;
+			max-height: 100%;
+			overflow: auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Заголовок содержимого</h1>
+	<div class="content">
+		Что то еще;;;
+	</div>
+	
+	<div class="pop-up-wrap">
+		<div class="pop-up">
+			<h2>;;;;ЗАГОЛОВОК::::</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, consequuntur id. Accusantium illo, incidunt inventore dolore, commodi ea, vero molestiae tenetur facilis temporibus ullam praesentium quae deleniti voluptatum asperiores iusto!</p>
+			<span>Плюсы:</span>
+			<ul>
+				<li><span class='plus'>+</span> Простой для понимания </li>
+				<li><span class="plus">+</span> Ширина попапа может быть 100% от ширины контейнера </li>
+			</ul>
+			<span>Минусы:</span>
+			<ul>
+				<li><span class='minus'>-</span> Не работает в IE8 и ниже </li>
+				<li><span class='minus'>-</span> Когда текст не влазит и появляется скролл, то при скролле могут быть артефакты изображения</li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas veniam incidunt ratione! Possimus consequuntur similique eaque eveniet, deserunt eos voluptatibus. Dolore asperiores, ipsa reiciendis nulla repellendus illum quas deleniti commodi.</p>
+		</div>
+	</div>
+
+</body>
+</html>

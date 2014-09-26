@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Способ 3</title>
+	<style>
+		
+		html, body {
+			margin: 0;
+			padding: 0;
+		}
+
+		.pop-up-wrap {
+			position: fixed;
+			left: 0;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			z-index: 999;
+			background: #000;
+			background: rgba(0,0,0,.6);
+			display: -webkit-box;
+  		display: -moz-box;
+  		display: -ms-flexbox;
+  		display: -webkit-flex;
+  		display: flex;
+  		-webkit-box-align: center;
+  		-moz-box-align: center;
+  		-ms-flex-align: center;
+  		-webkit-align-items: center;
+  		align-items: center;
+  		-webkit-box-pack: center;
+  		-moz-box-pack: center;
+  		-ms-flex-pack: center;
+  		-webkit-justify-content: center;
+  		justify-content: center;
+		}
+
+		.pop-up {
+			background: #fff;
+			box-sizing: border-box;
+			padding: 10px;
+			border-radius: 5px;
+			width: 50%;
+			margin: 0 auto;
+			overflow: auto;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>Заголовок содержимого</h1>
+	<div class="content">
+		Что то еще;;;
+	</div>
+	
+	<div class="pop-up-wrap">
+		<div class="pop-up">
+			<h2>;;;;ЗАГОЛОВОК::::</h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis, consequuntur id. Accusantium illo, incidunt inventore dolore, commodi ea, vero molestiae tenetur facilis temporibus ullam praesentium quae deleniti voluptatum asperiores iusto!</p>
+			<span>Плюсы:</span>
+			<ul>
+				<li><span class='plus'>+</span> Новые технологии </li>
+				<li><span class="plus">+</span> Ширина попапа может быть 100% от ширины контейнера </li>
+			</ul>
+			<span>Минусы:</span>
+			<ul>
+				<li><span class='minus'>-</span> Три спецификации Flex Box </li>
+				<li><span class='minus'>-</span> Куча свойств и префиксов </li>
+				<li><span class='minus'>-</span> Плохая поддержка браузеров </li>
+			</ul>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas veniam incidunt ratione! Possimus consequuntur similique eaque eveniet, deserunt eos voluptatibus. Dolore asperiores, ipsa reiciendis nulla repellendus illum quas deleniti commodi.</p>
+		</div>
+	</div>
+
+</body>
+</html>
